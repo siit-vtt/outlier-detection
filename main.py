@@ -245,13 +245,13 @@ else:
 					print('saving best model...')
 					shutil.copyfile(fn, fn_best)
 
-			if iter == opt.max_iter:
-				break_flag = True
-				break
+			#if iter == opt.max_iter:
+			#	break_flag = True
+			#	break
 			iter  	 += 1
 		###########################################################################################
-		#if iter >= opt.max_iter:
-		#	break
+		if iter >= opt.max_iter:
+			break
 		if break_flag:
 			break
 
